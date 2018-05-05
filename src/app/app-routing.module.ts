@@ -1,7 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
-import { AppComponent } from './app.component';
 import { AccountListComponent } from './account-list/account-list.component';
 import { AccountCreateComponent } from './account-create/account-create.component';
 import { ContactListComponent } from './contact-list/contact-list.component';
@@ -11,25 +10,32 @@ import { LeadCreateComponent } from './lead-create/lead-create.component';
 import { OpportunityListComponent } from './opportunity-list/opportunity-list.component';
 import { OpportunityCreateComponent } from './opportunity-create/opportunity-create.component';
 
-import {AppRoutingModule} from './app-routing.module';
+
+const routes: Routes = [
+  
+  { path: '', redirectTo: 'accounts', pathMatch: 'full' },
+  {
+    path: 'accounts',
+    component: AccountListComponent
+  },
+  {
+    path: 'contacts',
+    component: ContactListComponent      
+  },
+  {
+    path: 'leads',
+    component: LeadListComponent      
+  }
+  ,
+  {
+    path: 'opportunities',
+    component: OpportunityListComponent      
+  }
+
+];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AccountListComponent,
-    AccountCreateComponent,
-    ContactListComponent,
-    ContactCreateComponent,
-    LeadListComponent,
-    LeadCreateComponent,
-    OpportunityListComponent,
-    OpportunityCreateComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
-export class AppModule { }
+export class AppRoutingModule { }

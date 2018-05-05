@@ -1,4 +1,8 @@
-# Crmapp
+# CRM App with Angular 6
+
+This is the front-end application for this [back-end](https://github.com/techiediaries/django-crm) built with Django.
+
+You can read this [tutorial](https://www.techiediaries.com/angular-tutorial) accompanying this repository for more information. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
