@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { APIService } from '../api.service';
+
 @Component({
   selector: 'app-account-list',
   templateUrl: './account-list.component.html',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private apiService: APIService) { }
 
   ngOnInit() {
+    this.getAccounts();
+  }
+
+  public getAccounts(){
+    this.apiService.getAccounts();
   }
 
 }

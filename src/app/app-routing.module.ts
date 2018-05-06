@@ -19,19 +19,33 @@ const routes: Routes = [
     component: AccountListComponent
   },
   {
+    path: 'create-account',
+    component: AccountCreateComponent      
+  },    
+  {
     path: 'contacts',
     component: ContactListComponent      
   },
   {
+    path: 'create-contact',
+    component: ContactCreateComponent      
+  },  
+  {
     path: 'leads',
     component: LeadListComponent      
-  }
-  ,
+  },
+  {
+    path: 'create-lead',
+    component: LeadCreateComponent      
+  },    
   {
     path: 'opportunities',
     component: OpportunityListComponent      
-  }
-
+  },
+  {
+    path: 'create-opportunity',
+    component: OpportunityCreateComponent      
+  }  
 ];
 
 @NgModule({

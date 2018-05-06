@@ -1,3 +1,24 @@
-<p>
-  contact-list works!
-</p>
+<h1>
+  My Contacts
+</h1>
+
+<div>
+    <table style="width:100%">
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Address</th>
+          
+        </tr>
+        <tr *ngFor="let contact of contacts">
+          <td> {{ contact.first_name }} </td>
+          <td> {{ contact.last_name }} </td>
+          <td> {{ contact.phone }} </td>
+          <td> {{ contact.email }} </td>
+          <td> {{ contact.address }} </td>
+        </tr>
+
+      </table> 
+</div>

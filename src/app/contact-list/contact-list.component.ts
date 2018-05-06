@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { APIService } from '../api.service';
 @Component({
   selector: 'app-contact-list',
   templateUrl: './contact-list.component.html',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactListComponent implements OnInit {
 
-  constructor() { }
+  private contacts: Array<object> = [];
+  constructor(private apiService: APIService) { }
 
   ngOnInit() {
+    this.getContacts();
+  }
+
+  public getContacts(){
+    this.apiService.getContacts().subscribe((data: Array<object>) => {
+
+      this.contacts = data;
+      console.log(data);
+    });
   }
 
 }
