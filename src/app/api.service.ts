@@ -11,26 +11,26 @@ export class APIService {
 
   constructor(private httpClient: HttpClient) {}
 
-  getAccounts(){
+  getAccounts() {
     return this.httpClient.get(`${this.API_URL}/accounts`);
   }
 
-  getContacts(){
+  getContacts() {
     return this.httpClient.get(`${this.API_URL}/contacts`);
   }
-  createContact(contact){
-    return this.httpClient.post(`${this.API_URL}/contacts/`,contact);
+  createContact(contact) {
+    return this.httpClient.post(`${this.API_URL}/contacts/`, contact);
   }
-  updateContact(contact){
-    return this.httpClient.put(`${this.API_URL}/contacts/`,contact);
+  updateContact(contact) {
+    return this.httpClient.put(`${this.API_URL}/contacts/`, contact);
   }
-  deleteContact(contact){
+  deleteContact(contact) {
     return this.httpClient.delete(`${this.API_URL}/contacts/${contact.pk}`);
   }
-  getLeads(){
+  getLeads() {
     return this.httpClient.get(`${this.API_URL}/leads`);
   }
-  getOpportunities(){
+  getOpportunities() {
     return this.httpClient.get(`${this.API_URL}/opportunities`);
   }
 }
