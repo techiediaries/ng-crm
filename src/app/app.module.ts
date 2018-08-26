@@ -14,6 +14,7 @@ import { OpportunityCreateComponent } from './opportunity-create/opportunity-cre
 import {AppRoutingModule} from './app-routing.module';
 
 import { HttpClientModule } from '@angular/common/http';
+import { VoucherListComponent } from './voucher-list/voucher-list.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     LeadListComponent,
     LeadCreateComponent,
     OpportunityListComponent,
-    OpportunityCreateComponent
+    OpportunityCreateComponent,
+    VoucherListComponent
   ],
   imports: [
     BrowserModule,
