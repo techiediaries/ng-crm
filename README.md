@@ -4,6 +4,8 @@ This is the front-end application for this [back-end](https://github.com/techied
 
 You can read this [tutorial](https://www.techiediaries.com/angular-tutorial) accompanying this repository for more information. 
 
+For v7, read the [Angular 7 tutorial](https://www.techiediaries.com/angular-tutorial-basics/).
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
 ## Development server
