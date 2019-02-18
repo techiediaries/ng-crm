@@ -6,6 +6,15 @@ You can read this [tutorial](https://www.techiediaries.com/angular-tutorial) acc
 
 For v7, read the [Angular 7 tutorial](https://www.techiediaries.com/angular-tutorial-basics/).
 
+Also read:
+
+[Angular 7|6 Tutorial: Using Angular HttpClient with Node & Express.js - Example POST Requests](https://www.techiediaries.com/angular-tutorial-httpclient-post/)
+
+[Angular 7|6 By Example: HTTP GET Requests with HttpClient (Services, async pipe and Observables)](https://www.techiediaries.com/angular-by-example-httpclient-get/)
+
+[Angular Http — Angular 6|7 HttpClient Tutorial](https://www.techiediaries.com/angular-http-client)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
 ## Development server
