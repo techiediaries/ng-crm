@@ -1,0 +1,22 @@
+<h1>
+  Reapp Voucher
+</h1>
+
+<div>
+  <table style="width:100%">
+    <tr>
+      <th>Voucher Company</th>
+      <th>Voucher Count</th>
+      <th>Icon</th>
+      <th>Description</th>
+
+    </tr>
+    <tr *ngFor="let voucher of voucher_list">
+      <td> {{ voucher.voucher_company }} </td>
+      <td> {{ voucher.count }} </td>
+      <td> <img src="{{ voucher.icon }}"/> </td>
+      <td> {{ voucher.description }} </td>
+    </tr>
+
+  </table>
+</div>

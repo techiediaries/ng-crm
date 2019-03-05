@@ -9,10 +9,11 @@ import { LeadListComponent } from './lead-list/lead-list.component';
 import { LeadCreateComponent } from './lead-create/lead-create.component';
 import { OpportunityListComponent } from './opportunity-list/opportunity-list.component';
 import { OpportunityCreateComponent } from './opportunity-create/opportunity-create.component';
+import {VoucherListComponent} from './voucher-list/voucher-list.component';
 
 
 const routes: Routes = [
-  
+
   { path: '', redirectTo: 'accounts', pathMatch: 'full' },
   {
     path: 'accounts',
@@ -20,32 +21,36 @@ const routes: Routes = [
   },
   {
     path: 'create-account',
-    component: AccountCreateComponent      
-  },    
+    component: AccountCreateComponent
+  },
   {
     path: 'contacts',
-    component: ContactListComponent      
+    component: ContactListComponent
   },
   {
     path: 'create-contact',
-    component: ContactCreateComponent      
-  },  
+    component: ContactCreateComponent
+  },
   {
     path: 'leads',
-    component: LeadListComponent      
+    component: LeadListComponent
   },
   {
     path: 'create-lead',
-    component: LeadCreateComponent      
-  },    
+    component: LeadCreateComponent
+  },
   {
     path: 'opportunities',
-    component: OpportunityListComponent      
+    component: OpportunityListComponent
   },
   {
     path: 'create-opportunity',
-    component: OpportunityCreateComponent      
-  }  
+    component: OpportunityCreateComponent
+  },
+  {
+    path: 'voucher-list',
+    component: VoucherListComponent
+  }
 ];
 
 @NgModule({

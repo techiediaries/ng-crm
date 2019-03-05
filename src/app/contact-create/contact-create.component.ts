@@ -13,22 +13,21 @@ export class ContactCreateComponent implements OnInit {
   ngOnInit() {
   }
 
-  createContact(){
-    var contact = {
-      account: 1,
-      address: "Home N 333 Apartment 300",
+  createContact() {
+    const contact = {
+      account_id: 1,
+      address: 'Home N 333 Apartment 300',
       createdBy: 1,
-      description: "This is the third contact",
-      email: "abbess@email.com",
-      first_name: "kaya",
+      description: 'This is the third contact',
+      email: 'abbess@email.com',
+      first_name: 'kaya',
       isActive: true,
-      last_name: "Abbes",
-      phone: "00121212101",
+      last_name: 'Abbes',
+      phone: '00121212101',
     };
 
     this.apiService.createContact(contact).subscribe((response) => {
       console.log(response);
     });
-  };
-
+  }
 }
